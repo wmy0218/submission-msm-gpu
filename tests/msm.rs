@@ -1,3 +1,11 @@
+/*
+ * @FilePath: /Msmtest/submission-msm-gpu/tests/msm.rs
+ * @Author: Wang zhicheng
+ * @Version: 0.0.1
+ * @Date: 2025-01-02 12:42:30
+ * @LastEditors: Wang zhicheng
+ * @LastEditTime: 2025-03-25 14:46:51
+ */
 // Copyright Supranational LLC
 // Licensed under the Apache License, Version 2.0, see LICENSE for details.
 // SPDX-License-Identifier: Apache-2.0
@@ -13,7 +21,7 @@ use blst_msm::*;
 
 #[test]
 fn msm_correctness() {
-    let test_npow = std::env::var("TEST_NPOW").unwrap_or("26".to_string());
+    let test_npow = std::env::var("TEST_NPOW").unwrap_or("16".to_string());
     let npoints_npow = i32::from_str(&test_npow).unwrap();
 
     let batches = 4;

@@ -1,3 +1,11 @@
+/*
+ * @FilePath: /Msmtest/submission-msm-gpu/src/lib.rs
+ * @Author: Wang zhicheng
+ * @Version: 0.0.1
+ * @Date: 2025-01-02 12:42:30
+ * @LastEditors: Wang zhicheng
+ * @LastEditTime: 2025-03-25 14:47:10
+ */
 // Copyright Supranational LLC
 // Licensed under the Apache License, Version 2.0, see LICENSE for details.
 // SPDX-License-Identifier: Apache-2.0
@@ -39,7 +47,7 @@ pub fn multi_scalar_mult_init<G: AffineCurve>(
     points: &[G],
 ) -> MultiScalarMultContext {
 
-    let max_points = 1<<26;
+    let max_points = 1<<16;
     let max_batches = 16;
     let npoints = points.len();
     
